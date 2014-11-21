@@ -1,7 +1,7 @@
 ora_js = {};
 
 ora_js.AWS = require('aws-sdk');
-ora_js.AWS.config.update({accessKeyId: 'AKIAIXWFTTMHQKL6TPUA', secretAccessKey: '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'});
+
 ora_js.AWS.config.update({region: 'us-east-1'});
 
 ora_js.dynamodb = new ora_js.AWS.DynamoDB();
