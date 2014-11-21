@@ -9,8 +9,12 @@ ora_js.s3 = new ora_js.AWS.S3();
 
 ora_js.usw = new ora_js.AWS.S3({region: 'us-east-1'});
 
-pg = require("pg");
+var pg = require("pg");
 ora_js.cn = "pg://postgres:sheba1810@th.ora.tv:5432/oratv_dev";
+
+//ora_js.feedparser = require('feedparser');
+
+ora_js.request = require('request');
 
 var express = require('express');
 app = express();
@@ -26,3 +30,4 @@ console.log('Listening on port 1810 ');
 app.use(express.static(__dirname + '/public'));
 
 var util	= require('./routes/util.js');
+var reader 	= require('./routes/reader.js')(app);
