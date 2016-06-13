@@ -10,7 +10,7 @@ ora_js.s3 = new ora_js.AWS.S3();
 ora_js.usw = new ora_js.AWS.S3({region: 'us-east-1'});
 
 var pg = require("pg");
-ora_js.cn = "pg://postgres:sheba1810@th.ora.tv:5432/oratv_dev";
+ora_js.cn = "pg://postgres:****@th.ora.tv:5432/oratv_dev";
 
 //ora_js.feedparser = require('feedparser');
 
